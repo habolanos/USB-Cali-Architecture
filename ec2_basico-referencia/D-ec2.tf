@@ -18,7 +18,7 @@ resource "aws_instance" "mi_servidor_ec2" {
   // usado durante la inicialización
   user_data = <<-EOF
               #!/bin/bash
-              echo "Informacion de Inicializacion - ICESI!" > index.html
+              echo "Informacion de Inicializacion - USB Cali!" > index.html
               nohup busybox httpd -f -p 8080 &
               EOF
 
